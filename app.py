@@ -205,7 +205,7 @@ st.markdown("""
 
 </div>
 
-<br><br>
+<br>
 
 **Noman Khan**  
 Computer Vision & AI Enthusiast  
