@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 from PIL import Image
 import io
-
+st.write(st.__version__)
 st.set_page_config(page_title="Scanner", layout="wide")
 
 from utils.image_utils import load_image, convert_to_grayscale, resize_image
