@@ -49,10 +49,26 @@ h1, h2, h3 {
     border-radius: 6px;
 }
 
+/* Hyperlinks */
+a {
+    color: #4CC9F0 !important;
+}
+<style>
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+
 </style>
 """, unsafe_allow_html=True)
 
-st.write(st.__version__)
+
 #  SIDEBAR CONTROLS
 st.sidebar.title("⚙️ Settings")
 
@@ -64,14 +80,49 @@ show_original = st.sidebar.checkbox("Show Original Image", True)
 
 
 #  TITLE
+
 st.markdown("<h1> Document Scanner Pro</h1>", unsafe_allow_html=True)
 st.write("Upload an image to convert it into a clean scanned document ✨")
 
 
+# 👇 ADD ABOUT SECTION HERE
+st.markdown("## 👨‍💻 About Developer")
+
+st.markdown("""
+<div style="display:flex; gap:20px; align-items:center;">
+
+<a href="https://github.com/YOUR_GITHUB" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40"/>
+</a>
+
+<a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40"/>
+</a>
+
+</div>
+
+**Noman Khan**  
+Computer Vision & AI Enthusiast 🚀  
+Building intelligent document scanning systems 📄✨
+""", unsafe_allow_html=True)
+
+
+# 👇 THEN FILE UPLOAD STARTS
+uploaded_file = st.file_uploader(
+    "Click the button below to upload an image",
+    type=["jpg", "jpeg", "png"]
+)
 
 # FILE UPLOAD
+st.info("""
+💡 **Tips for best results:**
+- Use clear document images 📄  
+- Avoid dark or blurry photos 🌑  
+- Keep document inside frame  
+- Use flat surface (no folds)  
+- Good lighting improves accuracy 💡  
+""")
 
-uploaded_file = st.file_uploader("Click the button below to upload an image", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
 
