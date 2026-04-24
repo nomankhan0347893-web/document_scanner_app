@@ -85,26 +85,7 @@ st.markdown("<h1> Document Scanner Pro</h1>", unsafe_allow_html=True)
 st.write("Upload an image to convert it into a clean scanned document ✨")
 
 
-# 👇 ADD ABOUT SECTION HERE
-st.markdown("## 👨‍💻 About Developer")
 
-st.markdown("""
-<div style="display:flex; gap:20px; align-items:center;">
-
-<a href="https://github.com/YOUR_GITHUB" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40"/>
-</a>
-
-<a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40"/>
-</a>
-
-</div>
-
-**Noman Khan**  
-Computer Vision & AI Enthusiast 🚀  
-Building intelligent document scanning systems 📄✨
-""", unsafe_allow_html=True)
 
 
 # 👇 THEN FILE UPLOAD STARTS
@@ -209,22 +190,23 @@ if uploaded_file is not None:
             st.error(" Could not detect a document. Try a clearer image.")
 
 # 👇 ADD ABOUT SECTION HERE
-st.markdown("## 👨‍💻 About Developer")
+st.markdown("## About Developer")
 
 st.markdown("""
 <div style="display:flex; gap:20px; align-items:center;">
 
-<a href="https://github.com/YOUR_GITHUB" target="_blank">
+<a href="https://github.com/nomankhan0347893-web" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40"/>
 </a>
 
-<a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+<a href="https://www.linkedin.com/in/noman-khan-95787139b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bsw4LIOFOR9aOXnh7K37btA%3D%3D" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40"/>
 </a>
 
 </div>
 <br>
-#####_**Noman Khan**_
-Computer Vision & AI Enthusiast 🚀  
-Building intelligent document scanning systems 📄✨
+**Noman Khan**  
+<br>
+Computer Vision & AI Enthusiast  
+Building intelligent document scanning systems ✨
 """, unsafe_allow_html=True)
