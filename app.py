@@ -87,7 +87,7 @@ if uploaded_file is not None:
     if show_original:
         with col1:
             st.subheader(" Original Image")
-            st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), width="stretch")
+            st.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), use_container_width=True)
 
     progress.progress(20)
 
@@ -136,13 +136,13 @@ if uploaded_file is not None:
                     st.warning(" Invalid crop selection, showing full image")
                     cropped = scanned
 
-                st.image(cropped, width="stretch", clamp=True)
+                st.image(cropped, use_container_width=True, clamp=True)
 
            
             #  EDGE VIEW
             if show_edges:
                 st.subheader("Edge Detection")
-                st.image(edges, width="stretch", clamp=True)
+                st.image(edges, use_container_width=True, clamp=True)
 
            
             # ⬇️ DOWNLOAD CROPPED IMAGE
