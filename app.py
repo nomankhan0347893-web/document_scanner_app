@@ -52,7 +52,7 @@ h1, h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-
+st.write(st.__version__)
 #  SIDEBAR CONTROLS
 st.sidebar.title("⚙️ Settings")
 
