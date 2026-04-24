@@ -68,29 +68,40 @@ a:hover {
 </style>
 """, unsafe_allow_html=True)
 
-st.sidebar.markdown("## How to Use")
+st.sidebar.title(" Guide")
 
-st.sidebar.write("""
-1. Upload document image  
-2. Wait for scanning  
-3. Adjust crop if needed  
-4. Download result  
-""")
+# =========================
+# HOW TO USE (EXPANDABLE)
+# =========================
+with st.sidebar.expander(" How to Use", expanded=False):
+    st.write("""
+    1. Upload document image  
+    2. Wait for scanning  
+    3. Adjust crop if needed  
+    4. Download result  
+    """)
 
-st.sidebar.markdown("---")
+# =========================
+# SUPPORTED IMAGES
+# =========================
+with st.sidebar.expander(" Supported Images", expanded=False):
+    st.write("""
+    ✔ White papers  
+    ✔ Printed documents  
+    ✔ Receipts  
+    ✔ Notes  
+    """)
 
-st.sidebar.markdown("## Supported Images")
-st.sidebar.write("""
-✔ White papers  
-✔ Printed documents  
-✔ Receipts  
-✔ Notes  
-
-Not recommended:
-- Dark images  
-- Blurry photos  
-- Curved paper
-""")
+# =========================
+# NOT RECOMMENDED
+# =========================
+with st.sidebar.expander(" Not Recommended Images", expanded=False):
+    st.write("""
+    - Dark images  
+    - Blurry photos  
+    - Curved paper  
+    - Low contrast images  
+    """)
 
 #  SIDEBAR CONTROLS
 st.sidebar.title("⚙️ Settings")
