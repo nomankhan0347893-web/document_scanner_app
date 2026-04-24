@@ -207,3 +207,24 @@ if uploaded_file is not None:
 
         else:
             st.error(" Could not detect a document. Try a clearer image.")
+
+# 👇 ADD ABOUT SECTION HERE
+st.markdown("## 👨‍💻 About Developer")
+
+st.markdown("""
+<div style="display:flex; gap:20px; align-items:center;">
+
+<a href="https://github.com/YOUR_GITHUB" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40"/>
+</a>
+
+<a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40"/>
+</a>
+
+</div>
+
+**Noman Khan**  
+Computer Vision & AI Enthusiast 🚀  
+Building intelligent document scanning systems 📄✨
+""", unsafe_allow_html=True)
