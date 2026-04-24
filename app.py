@@ -203,7 +203,8 @@ st.markdown("""
     <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="40"/>
 </a>
 
-</div>\n
+</div>
+
 **Noman Khan**  
 <br>
 Computer Vision & AI Enthusiast  
