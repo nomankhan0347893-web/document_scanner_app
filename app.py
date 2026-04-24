@@ -205,8 +205,9 @@ st.markdown("""
 
 </div>
 
+<br><br>
+
 **Noman Khan**  
-<br>
 Computer Vision & AI Enthusiast  
 Building intelligent document scanning systems ✨
 """, unsafe_allow_html=True)
