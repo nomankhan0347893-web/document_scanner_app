@@ -68,6 +68,29 @@ a:hover {
 </style>
 """, unsafe_allow_html=True)
 
+st.sidebar.markdown("## How to Use")
+
+st.sidebar.write("""
+1. Upload document image  
+2. Wait for scanning  
+3. Adjust crop if needed  
+4. Download result  
+""")
+
+st.sidebar.markdown("---")
+
+st.sidebar.markdown("## Supported Images")
+st.sidebar.write("""
+✔ White papers  
+✔ Printed documents  
+✔ Receipts  
+✔ Notes  
+
+Not recommended:
+- Dark images  
+- Blurry photos  
+- Curved paper
+""")
 
 #  SIDEBAR CONTROLS
 st.sidebar.title("⚙️ Settings")
@@ -96,12 +119,12 @@ uploaded_file = st.file_uploader(
 
 # FILE UPLOAD
 st.info("""
-💡 **Tips for best results:**
-- Use clear document images 📄  
-- Avoid dark or blurry photos 🌑  
+ **Tips for best results:**
+- Use clear document images 
+- Avoid dark or blurry photos  
 - Keep document inside frame  
 - Use flat surface (no folds)  
-- Good lighting improves accuracy 💡  
+- Good lighting improves accuracy   
 """)
 
 
