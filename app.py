@@ -223,8 +223,8 @@ st.markdown("""
 </a>
 
 </div>
-
-**Noman Khan**  
+<br>
+#####_**Noman Khan**_
 Computer Vision & AI Enthusiast 🚀  
 Building intelligent document scanning systems 📄✨
 """, unsafe_allow_html=True)
